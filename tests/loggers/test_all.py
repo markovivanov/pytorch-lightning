@@ -6,7 +6,7 @@ import pytest
 import tests.base.utils as tutils
 from pytorch_lightning import Trainer
 from pytorch_lightning.loggers import (
-    TensorBoardLogger, MLFlowLogger, NeptuneLogger, TestTubeLogger, CometLogger, WandbLogger)
+    TensorBoardLogger, MLFlowLogger, NeptuneLogger, TestTubeLogger, CometLogger)
 from tests.base import LightningTestModel
 
 
