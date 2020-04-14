@@ -1,10 +1,12 @@
-import pytest
+import warnings
 
+import pytest
 import torch.multiprocessing as mp
 
 
 def pytest_configure(config):
     config.addinivalue_line("markers", "spawn: spawn test in a separate process using torch.multiprocessing.spawn")
+    warnings.simplefilter('always')
 
 
 def wrap(i, fn, args):
